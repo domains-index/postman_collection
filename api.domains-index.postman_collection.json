@@ -1,0 +1,632 @@
+{
+	"info": {
+		"_postman_id": "4e9a31ae-3414-4a2e-8204-7750a87655dc",
+		"name": "api.domains-index",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/domains/search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/search?api_key&date&page&limit=50&domain&zone&country=&isDead&A&NS&CNAME&MX&TXT",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"search"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": null,
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": null,
+							"description": "Request date"
+						},
+						{
+							"key": "page",
+							"value": null,
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						},
+						{
+							"key": "domain",
+							"value": null,
+							"description": "Domain includes"
+						},
+						{
+							"key": "zone",
+							"value": null,
+							"description": "In Zone"
+						},
+						{
+							"key": "country",
+							"value": "",
+							"description": "Hosting Country"
+						},
+						{
+							"key": "isDead",
+							"value": null,
+							"description": "Dead or not, default not"
+						},
+						{
+							"key": "A",
+							"value": null,
+							"description": "A record includes"
+						},
+						{
+							"key": "NS",
+							"value": null,
+							"description": "NS record includes"
+						},
+						{
+							"key": "CNAME",
+							"value": null,
+							"description": "CNAME record includes"
+						},
+						{
+							"key": "MX",
+							"value": null,
+							"description": "MX record includes"
+						},
+						{
+							"key": "TXT",
+							"value": null,
+							"description": "TXT record includes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/tld/{zone_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/tld/{zone_id}?api_key&date&page&limit=50&domain&zone&country&isDead&A&NS&CNAME&MX&TXT",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"tld",
+						"{zone_id}"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": null,
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": null,
+							"description": "Request date"
+						},
+						{
+							"key": "page",
+							"value": null,
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						},
+						{
+							"key": "domain",
+							"value": null,
+							"description": "Domain includes"
+						},
+						{
+							"key": "zone",
+							"value": null,
+							"description": "In Zone"
+						},
+						{
+							"key": "country",
+							"value": null,
+							"description": "Hosting Country"
+						},
+						{
+							"key": "isDead",
+							"value": null,
+							"description": "Dead or Not, default not"
+						},
+						{
+							"key": "A",
+							"value": null,
+							"description": "A record includes"
+						},
+						{
+							"key": "NS",
+							"value": null,
+							"description": "NS record includes"
+						},
+						{
+							"key": "CNAME",
+							"value": null,
+							"description": "CNAME record includes"
+						},
+						{
+							"key": "MX",
+							"value": null,
+							"description": "MX record includes"
+						},
+						{
+							"key": "TXT",
+							"value": null,
+							"description": "TXT record includes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/tld/{zone_id}/download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/tld/{zone_id}/download?api_key&date",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"tld",
+						"{zone_id}",
+						"download"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": null,
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": null,
+							"description": "Request date"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/updates/added",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/updates/added?api_key&date&page&limit=50",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"updates",
+						"added"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "",
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"description": "Request date"
+						},
+						{
+							"key": "page",
+							"value": "",
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/updates/added/download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/updates/added/download?api_key&date",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"updates",
+						"added",
+						"download"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "",
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"description": "Request date"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/updates/deleted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/updates/deleted?api_key&date&page&limit=50",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"updates",
+						"deleted"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "",
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"description": "Request date"
+						},
+						{
+							"key": "page",
+							"value": "",
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/updates/deleted/download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/updates/deleted/download?api_key&date",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"updates",
+						"deleted",
+						"download"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "",
+							"description": "API key"
+						},
+						{
+							"key": "date",
+							"value": "",
+							"description": "Request date"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/domains/updates/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/domains/updates/list?api_key",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"domains",
+						"updates",
+						"list"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": null,
+							"description": "API key"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info/api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/info/api?api_key=",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"info",
+						"api"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "",
+							"description": "API key"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info/stat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/info/stat?page&limit=50",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"info",
+						"stat"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info/stat/{zone}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/info/stat/{zone}?page&limit=50",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"info",
+						"stat",
+						"{zone}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": null,
+							"description": "Search page to request"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info/tld",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/info/tld",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"info",
+						"tld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/info/tld/{zone}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.domains-index.com/v1/info/tld/{zone}?page&limit=50",
+					"host": [
+						"api",
+						"domains-index",
+						"com"
+					],
+					"path": [
+						"v1",
+						"info",
+						"tld",
+						"{zone}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "",
+							"description": "Request page"
+						},
+						{
+							"key": "limit",
+							"value": "50",
+							"description": "Results per page"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2fb0948d-a7cd-4fa9-976d-f1b1dabc1ae0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "da2b8118-8e06-44f3-896e-c9d6f158aede",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
